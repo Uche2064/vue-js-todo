@@ -3,10 +3,11 @@ import ButtonComponent from '@/components/ButtonComponent.vue'
 import FormFooter from '@/components/FormFooter.vue'
 import InputfieldComponent from '@/components/InputfieldComponent.vue'
 import FormComponent from '@/components/FormComponent.vue'
+import GoogleButtonComponent from '@/components/GoogleButtonComponent.vue'
 const loginUser = (e) => {
-    e.preventDefault();
+  e.preventDefault()
 
-  console.log('login user');
+  console.log('login user')
 }
 </script>
 
@@ -36,11 +37,13 @@ const loginUser = (e) => {
         :handleClick="loginUser"
         :style="{ width: '450px', marginBottom: '20px' }"
       />
+
+      <GoogleButtonComponent />
+
       <FormFooter :title="`Don't have an account?`" :content="'Sign up'" :route="'/signup'" />
     </FormComponent>
   </form>
 </template>
-
 
 <style scoped>
 .forgot-password {

@@ -3,9 +3,11 @@ import ButtonComponent from '@/components/ButtonComponent.vue'
 import FormFooter from '@/components/FormFooter.vue'
 import InputfieldComponent from '@/components/InputfieldComponent.vue'
 import FormComponent from '@/components/FormComponent.vue'
+import GoogleButtonComponent from '@/components/GoogleButtonComponent.vue'
+
 const signUp = (e) => {
-    e.preventDefault();
-    
+  e.preventDefault()
+
   console.log('signinng up user')
 }
 </script>
@@ -13,7 +15,6 @@ const signUp = (e) => {
 <template>
   <form action="" method="post">
     <FormComponent :title="'Sign up'">
-
       <InputfieldComponent
         :input-type="'email'"
         :input-name="'email'"
@@ -49,6 +50,8 @@ const signUp = (e) => {
         :handleClick="signUp"
         :style="{ width: '450px', marginBottom: '20px' }"
       />
+      <GoogleButtonComponent />
+
       <FormFooter :title="`Already a member?`" :content="'Login'" :route="'/login'" />
     </FormComponent>
   </form>

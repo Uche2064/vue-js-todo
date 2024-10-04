@@ -29,9 +29,13 @@ const props = defineProps({
   color: white;
   border-radius: 20px;
   transition: all 300ms ease-in-out;
+  border: 1px solid #03445d;
+
 }
 
 .button:hover {
-  background-color: #002b36;
+  background-color: #fff;
+  color: #03445d;
+  border: 1px solid #03445d;
 }
 </style>
